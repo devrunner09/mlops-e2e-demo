@@ -15,8 +15,8 @@ jobs:
       max-parallel: 4
 
     env:
-      DATABRICKS_HOST: ${{ secrets.DATABRICKS_STAGING_HOST }}
-      DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_STAGING_TOKEN }}
+      DATABRICKS_HOST: https://adb-3491128444128477.17.azuredatabricks.net
+      DATABRICKS_TOKEN:  dapi54d86fa75b379de604f7bc20727ee49f
 
     steps:
       - uses: actions/checkout@v3
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.9.5
+          python-version: 3.9.6
 
       - name: Install pip
         run: |

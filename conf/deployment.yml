@@ -14,16 +14,13 @@ custom:
 #    instance_pool_id: '0617-151415-bells2-pool-hh7h6tjm'
 
   dev-cluster-config: &dev-cluster-config
-    new_cluster:
-      <<: *default-cluster-spec
+    existing_cluster_id: 0804-032605-naxoiuii
 
   staging-cluster-config: &staging-cluster-config
-    new_cluster:
-      <<: *default-cluster-spec
+    existing_cluster_id: 0804-032605-naxoiuii
 
   prod-cluster-config: &prod-cluster-config
-    new_cluster:
-      <<: *default-cluster-spec
+    existing_cluster_id: 0804-032605-naxoiuii
 
 # Databricks Jobs definitions
 # please note that we're using FUSE reference for config, and env files, hence we're going to load this file using its local FS path
